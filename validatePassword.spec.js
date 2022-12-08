@@ -29,7 +29,7 @@ describe('Validate Password', () => {
 
     describe('Test allowed character types', () => {
         it('should accept a password containing 4 of 4 character types (uppercase, lowercase, number, special char)', () => {
-            const password = 'Abc2defgh&^'
+            const password = 'Abc2defgh&!'
             expect(validatePassword(password)).toBeTruthy()
         })
     
