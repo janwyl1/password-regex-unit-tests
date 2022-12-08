@@ -2,9 +2,11 @@
 
 Testing a password regex using [Vitest](https://vitest.dev/)
 
+For the Parallax frontend training 08/12/2022
+
 Uses boundary value analysis and equivalence partitioning to generate cases
 
-These are just examples, its not an exhaustive list
+These are just examples, its not an exhaustive list. Logic may be flawed! (its hard)
 
 ## Requirements
 - At least 10 characters 
