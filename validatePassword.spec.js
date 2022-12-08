@@ -39,9 +39,15 @@ describe('Validate Password', () => {
         })
 
         it('should accept a password containing 3 of 4 character types (uppercase, number, special char)', () => {
+            const password = 'ABC1DEFGH@'
+            expect(validatePassword(password)).toBeTruthy()
+        })
+
+        it('should accept a password containing 3 of 4 character types (uppercase, lowercase, special char)', () => {
             const password = 'Abcdefghi#'
             expect(validatePassword(password)).toBeTruthy()
         })
+
 
         it('should accept a password containing 3 of 4 character types (uppercase, lowercase, number)', () => {
             const password = 'Abc1defghi'
